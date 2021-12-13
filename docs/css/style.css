@@ -257,6 +257,7 @@ p {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 2rem;
 }
 
 .banner-1{
@@ -378,6 +379,87 @@ p {
     margin-right: 0.5rem;
 }
 
+/*Estilos seccion dos*/
+
+.seccion_dos{
+    background-color: #F7F6F6;
+}
+
+.centrado{
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.servicios{
+    padding: 2rem;
+    margin: 5rem 0 7rem 0;
+    border-radius: 0.5rem;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner-2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.inicio_servicios{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inicio_servicios img{
+    width: 10px;
+    margin-left: 1rem;
+}
+
+.inicio_servicios_mod{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.inicio_servicios_mod img{
+    width: 10px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.servicios_descripscion{
+    text-align: justify;
+    padding: 1rem 0 3rem 0;
+}
+
+
+.btn_servicios{
+    background-color: #DEA001;
+    color: #fff;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.7rem 0;
+    border-radius: 1rem;
+    border: 1px solid #DEA001;
+    transition: 0.3s;
+}
+
+.btn_servicios:hover{
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+
+/*Final estilos seccion 2*/
+
+
+
 /*Media querys*/
 @media only screen and (max-width:1400px){
     .acciones_contenedor{
@@ -450,6 +532,52 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+    .inicio_servicios_mod{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .inicio_servicios_mod img{
+        width: 10px;
+        margin-left: 1rem;
+        margin-top: 0rem;
+    }
+
+    .centrado{
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .servicios{
+        padding: 2rem;
+        margin: 2rem 0;
+        border-radius: 0.5rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .btn_servicios{
+        background-color: #DEA001;
+        color: #fff;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.6rem 0;
+        border-radius: 1rem;
+        border: 1px solid #DEA001;
+        transition: 0.3s;
+    }
+
+    .seccion_dos{
+        background-color: #F7F6F6;
+        padding-bottom: 4rem;
+    }
 
     .seccion_principal{
         height: auto;
@@ -458,6 +586,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-bottom: 4rem;
     }
 
     .seccion_1{
