@@ -560,47 +560,47 @@ p {
 
 /*Seccion 4*/
 
-.dividir{
+.dividir {
     display: flex;
     justify-content: center;
 }
 
-.seccion-dividir-uno{
+.seccion-dividir-uno {
     width: 45%;
 }
 
-.seccion-dividir-dos{
+.seccion-dividir-dos {
     width: 55%;
 }
 
-.imagen_capacitaciones{
+.imagen_capacitaciones {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.capacitaciones_textos{
+.capacitaciones_textos {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.imagen_capacitaciones img{
+.imagen_capacitaciones img {
     width: 100%;
     object-fit: contain;
 }
 
-.botones_capacitaciones{
+.botones_capacitaciones {
     display: flex;
     align-items: center;
     justify-content: start;
 }
 
-.parrafo_insa{
+.parrafo_insa {
     padding: 2.5rem 0;
 }
 
-#boton_ver_capacitaciones{
+#boton_ver_capacitaciones {
     background-color: #DEA001;
     color: #fff;
     text-decoration: none;
@@ -608,9 +608,10 @@ p {
     margin-right: 1rem;
     border-radius: 0.4rem;
     border: 2px solid #DEA001;
+    transition: 0.3s;
 }
 
-#boton_aula{
+#boton_aula {
     background-color: #fff;
     color: #DEA001;
     border: 2px solid #DEA001;
@@ -618,14 +619,70 @@ p {
     padding: 0.7rem 3.3rem;
     margin-right: 1rem;
     border-radius: 0.4rem;
+    transition: 0.3s;
+}
+
+#boton_ver_capacitaciones:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+#boton_aula:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
 /*Final Seccione 4*/
+
+#persona-testimonio {
+    font-weight: 700;
+}
+
+#empresa-testimonio {
+    font-size: 0.9rem;
+}
+
+.testimonios_contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.testi_uno {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testi_dos {
+    width: 50%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B2B2B2' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B2B2B2' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.testimonios {
+    padding-bottom: 4rem;
+}
+
+.fijar {
+    overflow-y: hidden;
+}
 
 /*Media querys*/
 
 
 @media only screen and (max-width:1400px) {
+    .banner-1 {
+        font-weight: 800;
+        font-size: 2.8rem;
+    }
+
     .fondo_menu {
         position: relative;
         z-index: 10;
@@ -669,7 +726,7 @@ p {
 
     .seccion_2 {
         width: 40%;
-        margin-top: 90px;
+        margin-top: 0px;
     }
 
     .menu_principal_opciones {
@@ -708,39 +765,39 @@ p {
 
     .seccion_2 {
         width: 90%;
-        margin-top: 90px;
+        margin-top: 0px;
     }
 }
 
-@media only screen and (max-width:991px){
-    .dividir{
+@media only screen and (max-width:991px) {
+    .dividir {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
-    
-    .seccion-dividir-uno{
+
+    .seccion-dividir-uno {
         width: 100%;
     }
-    
-    .seccion-dividir-dos{
+
+    .seccion-dividir-dos {
         width: 90%;
     }
 
-    .botones_capacitaciones{
+    .botones_capacitaciones {
         display: flex;
         align-items: center;
         justify-content: start;
         flex-direction: column;
     }
-    
-    .parrafo_insa{
+
+    .parrafo_insa {
         padding: 2.5rem 0;
         text-align: justify;
     }
-    
-    #boton_ver_capacitaciones{
+
+    #boton_ver_capacitaciones {
         background-color: #DEA001;
         color: #fff;
         text-decoration: none;
@@ -752,8 +809,8 @@ p {
         width: 100%;
         text-align: center;
     }
-    
-    #boton_aula{
+
+    #boton_aula {
         background-color: #fff;
         color: #DEA001;
         border: 2px solid #DEA001;
@@ -765,8 +822,29 @@ p {
         text-align: center;
     }
 
-    .seccion_cuatro{
+    .seccion_cuatro {
         margin-bottom: 4rem;
+    }
+
+    .testimonios_contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .testi_uno {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .testi_dos {
+        width: 70%;
+        text-align: center;
     }
 }
 
@@ -783,14 +861,6 @@ p {
     .img_caruouselt {
         object-fit: contain;
         height: 150px;
-    }
-
-    .carousel-control-prev-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B2B2B2' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-    }
-
-    .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B2B2B2' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
     }
 
     .firma_dos img {
@@ -861,7 +931,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 4rem;
+        padding-bottom: 0rem;
     }
 
     .seccion_1 {
